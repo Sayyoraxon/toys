@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'TT First Neue';
+  src: url('../pages/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../pages/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('opentype')
+          url('../pages/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.inter-font {
+  font-family: "Inter", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.tt-font {
+  font-family: "TT First Neue", sans-serif;
+}
+
+.sf-font {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.sf-font-bold {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 800;
+}
+
+.bgImage {
+  background-image: url('../public/backImage.png');
 }
